@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             newButton.addEventListener('click', (e) => {
                 e.preventDefault();
-                newP.textContent = "Цена в лева: " + (newFormInput.value / 1.95583).toFixed(2);
+                newP.textContent = "Цена в евро: " + (newFormInput.value / 1.95583).toFixed(2);
 
                 newFormInput.value = "";
                 form.appendChild(newP);
