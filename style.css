@@ -23,7 +23,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 94.4dvh;
     flex-direction: column;
     gap: 3em;
     padding: 2em;
@@ -86,4 +86,11 @@ form > button:hover {
     background: #eee;
     padding: 1em 2em;
     border-radius: 0.5em;
+}
+
+footer {
+    background: #45a049;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
