@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             newButton.addEventListener('click', (e) => {
                 e.preventDefault();
-                newP.textContent = "Цена в лева: " + newFormInput.value * 1.95583.toFixed(3);
-
+                newP.textContent = "Цена в лева: " + (newFormInput.value * 1.95583).toFixed(2);
+                
+                newFormInput.value = "";
                 form.appendChild(newP);
             })
         } else if (select.value == "Лева") {
@@ -44,8 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             newButton.addEventListener('click', (e) => {
                 e.preventDefault();
-                newP.textContent = "Цена в лева: " + newFormInput.value * 1.95583.toFixed(3);
+                newP.textContent = "Цена в лева: " + (newFormInput.value / 1.95583).toFixed(2);
 
+                newFormInput.value = "";
                 form.appendChild(newP);
             })
         }
