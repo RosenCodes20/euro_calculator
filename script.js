@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             newFormInput.id = 'euroInput';
             newFormInput.placeholder = 'Въведете цена в евро';
-            newFormInput.type = 'number';
+            newFormInput.type = 'text';
 
             newButton.textContent = 'Пресметни';
 

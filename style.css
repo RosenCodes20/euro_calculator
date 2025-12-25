@@ -80,3 +80,10 @@ form > button:hover {
     background: #45a049;
     transform: scale(1.05); 
 }
+
+#euroInput {
+    border: none;
+    background: #eee;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+}
