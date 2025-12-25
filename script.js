@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let select = document.getElementById("euroLeva");
+    let button =  document.getElementById("button");
 
-    console.log(select);
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+        let select = document.getElementById('euroLv');
+
+        if (select.value == "Евро") {
+            
+        } else if (select.value == "Лева") {
+
+        }
+    })
 })
