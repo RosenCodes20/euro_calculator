@@ -81,7 +81,7 @@ form > button:hover {
     transform: scale(1.05); 
 }
 
-#euroInput {
+#euroInput, #levaInput {
     border: none;
     background: #eee;
     padding: 1em 2em;

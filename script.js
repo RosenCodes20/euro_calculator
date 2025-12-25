@@ -29,7 +29,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 form.appendChild(newP);
             })
         } else if (select.value == "Лева") {
-            
+            let newFormInput = document.createElement('input');
+            let newButton = document.createElement('button');
+
+            newFormInput.id = 'levaInput';
+            newFormInput.placeholder = 'Въведете цена в лева';
+            newFormInput.type = 'text';
+
+            newButton.textContent = 'Пресметни';
+
+            form.appendChild(newFormInput);
+            form.appendChild(newButton);
+            let newP = document.createElement('p');
+
+            newButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                newP.textContent = "Цена в лева: " + newFormInput.value * 1.95583.toFixed(3);
+
+                form.appendChild(newP);
+            })
         }
     })
 })
