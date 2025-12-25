@@ -4,11 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener("click", (event) => {
         event.preventDefault();
         let select = document.getElementById('euroLv');
+        let form = document.getElementById('form');
+        select.remove();
+        button.remove();
 
         if (select.value == "Евро") {
-            
-        } else if (select.value == "Лева") {
+            let newFormInput = document.createElement('input');
+            let newButton = document.createElement('button');
 
+            newFormInput.id = 'euroInput';
+            newFormInput.placeholder = 'Въведете цена в евро';
+            newFormInput.type = 'number';
+
+            newButton.textContent = 'Пресметни';
+
+            form.appendChild(newFormInput);
+            form.appendChild(newButton);
+        } else if (select.value == "Лева") {
+            
         }
     })
 })
