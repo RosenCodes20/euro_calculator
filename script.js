@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             form.appendChild(newFormInput);
             form.appendChild(newButton);
+            let newP = document.createElement('p');
+
+            newButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                newP.textContent = "Цена в лева: " + newFormInput.value * 1.95583.toFixed(3);
+
+                form.appendChild(newP);
+            })
         } else if (select.value == "Лева") {
             
         }
